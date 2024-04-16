@@ -7,11 +7,12 @@ import java.util.Scanner;
 public class FileReadingUsingScannerClass {
 
 
-	public static void readFile(String filePath){
+	public static void main(String[] args) {
+		File file=new File(System.getProperty("user.dir")+"//Reading_file.txt");
 
 		try {
-			File myObj=new File(filePath);
-			Scanner myReader=new Scanner(myObj);
+
+			Scanner myReader=new Scanner(file);
 			while(myReader.hasNextLine()){ 	
 				String data=myReader.nextLine();
 				System.out.println(data);
@@ -27,12 +28,7 @@ public class FileReadingUsingScannerClass {
 			e.printStackTrace();
 		}
 	}
-	public static void main(String[] args) {
-		String filePath="C:\\Users\\DELL\\Documents\\TechElliptica_PrachiWork\\Reading_file.txt";
-		readFile(filePath) ;
 
-
-	}
 }
 
 

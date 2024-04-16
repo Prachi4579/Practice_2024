@@ -10,7 +10,7 @@ public class FileReadingUsingNIO {
 	public static void main(String[] args) {
 
 
-		Path filePath = Paths.get("<Directory Path>\\Reading_file.txt");
+		Path filePath = Paths.get(System.getProperty("user.dir")+"//Reading_file.txt");
 
 		try {
 			// Read all lines from the file into a list

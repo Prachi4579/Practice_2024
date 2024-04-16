@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 public class ReadingFileAsString {
 
 	public static void main(String[] args) {
-		Path path = Paths.get("C:\\Users\\DELL\\Documents\\TechElliptica_PrachiWork\\Reading_file.txt");
+		Path path = Paths.get(System.getProperty("user.dir")+"//Reading_file.txt");
 
 		String data = "";
 		try {

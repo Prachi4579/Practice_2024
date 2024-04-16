@@ -6,8 +6,7 @@ import java.io.IOException;
 
 public class FileReading_FileReaderClass {
 	public static void main(String[] args) {
-		String filePath="C:\\Users\\DELL\\Documents\\TechElliptica_PrachiWork\\Reading_file.txt";
-		readFile(filePath) ;
+			readFile(System.getProperty("user.dir")+"//Reading_file.txt") ;
 		
 		
 		}

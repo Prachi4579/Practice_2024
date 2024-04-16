@@ -9,8 +9,8 @@ import java.io.IOException;
 public class FileReading_BufferedReaderClass {
 
 	public static void main(String[] args) {
-		String path="C:\\Users\\DELL\\Documents\\TechElliptica_PrachiWork\\Reading_file.txt";
-		File file=new File(path);
+
+		File file=new File(System.getProperty("user.dir")+"//Reading_file.txt");
 		FileReader fil=null;
 		try {
 			fil = new FileReader(file);
